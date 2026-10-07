@@ -1,0 +1,31 @@
+<mxfile host="65bd71144e">
+    <diagram id="a8Xyj0wVFsJr9E3cbWXp" name="Page-1">
+        <mxGraphModel dx="1081" dy="417" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="nmm-FRebur-gWX46QJAy-2" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;recursiveResize=0;container=1;collapsible=0;width=230;height=50;" value="Sistem Informasi Peminjaman dan Pengembalian Peralatan Laboratorium&lt;br/&gt;Kampus" vertex="1">
+                    <mxGeometry height="290" width="480" x="185" y="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="nmm-FRebur-gWX46QJAy-5" parent="nmm-FRebur-gWX46QJAy-2" style="ellipse;html=1;whiteSpace=wrap;" value="Lihat Ketersediaan Peralatan" vertex="1">
+                    <mxGeometry height="60" width="90" x="95" y="115" as="geometry"/>
+                </mxCell>
+                <mxCell id="nmm-FRebur-gWX46QJAy-6" parent="nmm-FRebur-gWX46QJAy-2" style="ellipse;html=1;whiteSpace=wrap;" value="Kelola Data Peralatan" vertex="1">
+                    <mxGeometry height="60" width="90" x="295" y="115" as="geometry"/>
+                </mxCell>
+                <mxCell id="nmm-FRebur-gWX46QJAy-7" edge="1" parent="1" source="nmm-FRebur-gWX46QJAy-3" style="edgeStyle=none;shape=wire;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;dashed=1;endArrow=none;endFill=0;" target="nmm-FRebur-gWX46QJAy-5">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="nmm-FRebur-gWX46QJAy-3" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="Mahasiswa" vertex="1">
+                    <mxGeometry height="60" width="30" x="60" y="335" as="geometry"/>
+                </mxCell>
+                <mxCell id="nmm-FRebur-gWX46QJAy-8" edge="1" parent="1" source="nmm-FRebur-gWX46QJAy-4" style="edgeStyle=none;shape=wire;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;dashed=1;endArrow=none;endFill=0;" target="nmm-FRebur-gWX46QJAy-6">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="nmm-FRebur-gWX46QJAy-4" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="&amp;nbsp;Petugas Laboran&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="60" width="30" x="740" y="335" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
