@@ -1,26 +1,10 @@
-|           Sumber            |
-|-----------------------------|
-|          Hubungan           |
-|          Mahasiswa          |
-|           Tujuan            |
-|          Asosiasi           |
-|          Mahasiswa          |
-|          LAB-UC01           |
-|          Asosiasi           |
-|          Mahasiswa          |
-|          LAB-UC03           |
-|          Asosiasi           |
-|Petugas laboratorium Asosiasi|
-|          LAB-UC05           |
-|          LAB-UC02           |
-|Petugas laboratorium Asosiasi|
-|     Kepala laboratorium     |
-|          LAB-UC06           |
-|          Asosiasi           |
-|          LAB-UC03           |
-|          LAB-UC07           |
-|          «include»          |
-|          LAB-UC05           |
-|          LAB-UC04           |
-|          «extend»           |
-|          LAB-UC03           |
+| Sumber | Hubungan | Tujuan |
+|---|---|---|
+| Mahasiswa | Asosiasi | LAB-UC01 |
+| Mahasiswa | Asosiasi | LAB-UC03 |
+| Mahasiswa | Asosiasi | LAB-UC05 |
+| Petugas laboratorium | Asosiasi | LAB-UC02 |
+| Petugas laboratorium | Asosiasi | LAB-UC06 |
+| Kepala laboratorium | Asosiasi | LAB-UC07 |
+| LAB-UC03 | `<<include>>` | LAB-UC04 |
+| LAB-UC05 | `<<extend>>` | LAB-UC03 |

@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="sNzmHEg4YnYoGGqzOdBN" name="Page-1">
-        <mxGraphModel dx="725" dy="560" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="830" dy="522" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -16,10 +16,10 @@
                 <mxCell id="ECs6UevXVJvVXFe-PL_0-2" parent="ECs6UevXVJvVXFe-PL_0-1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Validasi KRS" vertex="1">
                     <mxGeometry height="60" width="120" x="340" y="90" as="geometry"/>
                 </mxCell>
-                <mxCell id="ECs6UevXVJvVXFe-PL_0-3" parent="ECs6UevXVJvVXFe-PL_0-1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Proses Keputusan KRS (terima/tolak)" vertex="1">
+                <mxCell id="ECs6UevXVJvVXFe-PL_0-3" parent="ECs6UevXVJvVXFe-PL_0-1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Catat Keputusan KRS(terima/tolak)&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
                     <mxGeometry height="60" width="120" x="340" y="200" as="geometry"/>
                 </mxCell>
-                <mxCell id="ECs6UevXVJvVXFe-PL_0-4" parent="ECs6UevXVJvVXFe-PL_0-1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Catat Keputusan KRS(terima/tolak)&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+                <mxCell id="ECs6UevXVJvVXFe-PL_0-4" parent="ECs6UevXVJvVXFe-PL_0-1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Proses Keputusan KRS(terima/tolak)" vertex="1">
                     <mxGeometry height="60" width="120" x="340" y="310" as="geometry"/>
                 </mxCell>
                 <mxCell id="ECs6UevXVJvVXFe-PL_0-10" edge="1" parent="ECs6UevXVJvVXFe-PL_0-1" source="ECs6UevXVJvVXFe-PL_0-6" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="ECs6UevXVJvVXFe-PL_0-2" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
@@ -28,16 +28,22 @@
                         <mxPoint x="290" y="240" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="ECs6UevXVJvVXFe-PL_0-12" edge="1" parent="ECs6UevXVJvVXFe-PL_0-1" source="ECs6UevXVJvVXFe-PL_0-5" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="ECs6UevXVJvVXFe-PL_0-6" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+                <mxCell id="ECs6UevXVJvVXFe-PL_0-25" edge="1" parent="ECs6UevXVJvVXFe-PL_0-1" source="ECs6UevXVJvVXFe-PL_0-5" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="ECs6UevXVJvVXFe-PL_0-6" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
                     <mxGeometry relative="1" width="160" as="geometry">
-                        <mxPoint x="130" y="240" as="sourcePoint"/>
-                        <mxPoint x="290" y="240" as="targetPoint"/>
+                        <mxPoint x="360" y="360" as="sourcePoint"/>
+                        <mxPoint x="520" y="360" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="ECs6UevXVJvVXFe-PL_0-26" edge="1" parent="ECs6UevXVJvVXFe-PL_0-1" source="ECs6UevXVJvVXFe-PL_0-3" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="ECs6UevXVJvVXFe-PL_0-4" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+                    <mxGeometry relative="1" width="160" as="geometry">
+                        <mxPoint x="340" y="500" as="sourcePoint"/>
+                        <mxPoint x="480" y="500" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="ECs6UevXVJvVXFe-PL_0-14" edge="1" parent="1" source="ECs6UevXVJvVXFe-PL_0-7" style="edgeStyle=none;shape=wire;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;endArrow=none;endFill=0;" target="ECs6UevXVJvVXFe-PL_0-6">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="ECs6UevXVJvVXFe-PL_0-15" edge="1" parent="1" source="ECs6UevXVJvVXFe-PL_0-7" style="edgeStyle=none;shape=wire;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;endArrow=none;endFill=0;" target="ECs6UevXVJvVXFe-PL_0-5">
+                <mxCell id="ECs6UevXVJvVXFe-PL_0-27" edge="1" parent="1" source="ECs6UevXVJvVXFe-PL_0-7" style="edgeStyle=none;shape=wire;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;endArrow=none;endFill=0;" target="ECs6UevXVJvVXFe-PL_0-5">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="ECs6UevXVJvVXFe-PL_0-7" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Mahasiswa" vertex="1">

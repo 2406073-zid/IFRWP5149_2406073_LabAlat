@@ -33,42 +33,25 @@
     pada potongan model ini.
 
 # Identifikasi Aktor 
-        |                       Aktor                        |
-    |----------------------------------------------------|
-    | -------------------------------------------------  |
-    |               Tujuan terhadap sistem               |
-    |                     Mahasiswa                      |
-    |  Melihat ketersediaan, mengajukan peminjaman, dan  |
-    |                   mencetak bukti                   |
-    |                      Petugas                       |
-    |                    laboratorium                    |
-    |    Mengelola peralatan dan memproses keputusan     |
-    |                       Kepala                       |
-    |                    laboratorium                    |
-    |             Melihat laporan peminjaman             |
-|                                                    |
+## Tabel Aktor Sistem Pengajuan KRS
+
+| Aktor | Tujuan terhadap Sistem |
+|---|---|
+| Mahasiswa | Memilih mata kuliah, mengajukan KRS, melihat status pengajuan, dan mengunduh bukti pengajuan. |
+| Dosen Wali | Memeriksa pengajuan KRS, memberikan persetujuan atau penolakan, serta mencatat keputusan dan alasannya. |
 
 # Identifikasi Use Case
-    |                            ID                            |
-    |----------------------------------------------------------|
-    |                      Nama use case                       |
-    |          LAB-UC01 Lihat ketersediaan peralatan           |
-    |                    Peran dalam model                     |
-    |              LAB-UC02 Kelola data peralatan              |
-    |                  Fungsi utama mahasiswa                  |
-    |                   Fungsi utama petugas                   |
-    |                LAB-UC03 Ajukan peminjaman                |
-    |              LAB-UC04 Periksa ketersediaan               |
-    |                  Fungsi utama mahasiswa                  |
-    |              Perilaku yang disertakan UC03               |
-    |              LAB-UC05 Cetak bukti pengajuan              |
-    |LAB-UC06 Proses keputusan peminjaman Fungsi utama petugas |
-    |               Tambahan bersyarat pada UC03               |
-    |            LAB-UC07 Lihat laporan peminjaman             |
-    |             Fungsi utama kepala laboratorium             |
+## Katalog Use Case Sistem Pengajuan KRS
+
+| ID | Nama Use Case | Keterangan |
+|---|---|---|
+| UC-01 | Ajukan KRS | Fungsi utama Mahasiswa untuk memilih mata kuliah dan mengirim pengajuan KRS. |
+| UC-02 | Validasi KRS | Proses sistem untuk memeriksa kelengkapan pengajuan, prasyarat mata kuliah, dan benturan jadwal. |
+| UC-03 | Unduh Bukti Pengajuan KRS | Perilaku tambahan yang dapat dilakukan Mahasiswa setelah pengajuan KRS berhasil disimpan. |
+| UC-04 | Proses Keputusan KRS | Fungsi utama Dosen Wali untuk memeriksa pengajuan dan memberikan persetujuan atau penolakan. |
+| UC-05 | Catat Keputusan KRS | Proses pencatatan hasil keputusan dan catatan Dosen Wali pada pengajuan KRS. |
 
 # Relasi Use Case
-
 | No. | Use Case Utama | Relasi | Use Case Terkait | Keterangan |
 |---:|---|---|---|---|
 | 1 | LAB-UC03 — Ajukan Peminjaman | `<<include>>` | LAB-UC04 — Periksa Ketersediaan | Pemeriksaan ketersediaan wajib dilakukan dalam proses pengajuan. |
