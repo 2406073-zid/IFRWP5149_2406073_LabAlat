@@ -57,29 +57,32 @@ tugas ini.
 # Katalog Use case
 | ID | Nama Use Case | Peran dalam Model | Sumber Kebutuhan |
 |---|---|---|---|
-| SIA-UC01 | Lihat Kalender Akademik | Use case yang dapat dilakukan oleh Civitas Akademika, yaitu mahasiswa dan dosen. | SIA-R01 |
-| SIA-UC02 | Input Nilai Mata Kuliah | Use case utama yang dilakukan dosen untuk memasukkan nilai mata kuliah yang diampunya setelah masa perkuliahan berakhir. | SIA-R02, SIA-R08, SIA-R09 |
-| SIA-UC03 | Lihat KHS | Use case utama yang dilakukan mahasiswa untuk melihat Kartu Hasil Studi pada semester yang nilainya sudah dipublikasikan. | SIA-R03, SIA-R04 |
-| SIA-UC04 | Kelola Data Mahasiswa | Use case yang dilakukan Admin Akademik untuk mengelola data mahasiswa. | SIA-R05, SIA-R06, SIA-R07 |
-| SIA-UC05 | Tambah Data Mahasiswa | Use case khusus untuk menambahkan data mahasiswa baru. | SIA-R05 |
-| SIA-UC06 | Ubah Data Mahasiswa | Use case khusus untuk mengubah data mahasiswa yang telah tersimpan. | SIA-R06 |
-| SIA-UC07 | Hapus Data Mahasiswa | Use case khusus untuk menghapus data mahasiswa. | SIA-R07 |
-| SIA-UC08 | Validasi Mata Kuliah yang Diampu | Use case untuk memastikan dosen hanya menginput nilai pada mata kuliah yang diampunya. | SIA-R08 |
-| SIA-UC09 | Simpan Nilai Mata Kuliah | Use case untuk menyimpan nilai yang telah diinput dosen. | SIA-R09 |
-| SIA-UC10 | Periksa Publikasi Nilai | Use case untuk memeriksa apakah nilai mahasiswa sudah dipublikasikan sebelum KHS ditampilkan. | SIA-R04 |
-| SIA-UC11 | Tampilkan KHS | Use case untuk menampilkan Kartu Hasil Studi berdasarkan data nilai yang sudah dipublikasikan. | SIA-R03, SIA-R04 |
-| SIA-UC12 | Tampilkan Peringatan Nilai Belum Dipublikasikan | Use case ekstensi yang menampilkan pemberitahuan jika nilai pada semester yang dipilih belum dipublikasikan. | SIA-R04 |
-| SIA-UC13 | Tampilkan Pesan Kesalahan Input Nilai | Use case ekstensi yang menampilkan pesan kesalahan jika nilai yang dimasukkan tidak valid. | SIA-R08 |
+| LHS-UC01 | Lihat Kalender Akademik | Use case umum yang dapat dilakukan oleh Civitas Akademika. | LHS-R01 |
+| LHS-UC02 | Input Nilai Mata Kuliah | Use case utama yang dilakukan dosen untuk memasukkan nilai mata kuliah yang diampunya. | LHS-R02, LHS-R08, LHS-R09 |
+| LHS-UC03 | Lihat KHS | Use case utama yang dilakukan mahasiswa untuk melihat KHS pada semester yang nilainya telah dipublikasikan. | LHS-R03, LHS-R04 |
+| LHS-UC04 | Kelola Data Mahasiswa | Use case umum untuk mengelola data mahasiswa oleh Admin Akademik. | LHS-R05, LHS-R06, LHS-R07 |
+| LHS-UC05 | Tambah Data Mahasiswa | Use case khusus untuk menambahkan data mahasiswa baru. | LHS-R05 |
+| LHS-UC06 | Ubah Data Mahasiswa | Use case khusus untuk mengubah data mahasiswa yang telah tersimpan. | LHS-R06 |
+| LHS-UC07 | Hapus Data Mahasiswa | Use case khusus untuk menghapus data mahasiswa sesuai aturan sistem. | LHS-R07 |
+| LHS-UC08 | Validasi Mata Kuliah yang Diampu | Memastikan dosen hanya menginput nilai pada mata kuliah yang menjadi tanggung jawabnya. | LHS-R08 |
+| LHS-UC09 | Simpan Nilai Mata Kuliah | Menyimpan nilai yang telah diinput dosen. | LHS-R09 |
+| LHS-UC10 | Periksa Publikasi Nilai | Memeriksa ketersediaan publikasi nilai sebelum KHS ditampilkan kepada mahasiswa. | LHS-R04 |
+| LHS-UC11 | Tampilkan KHS | Menampilkan KHS berdasarkan data nilai yang sudah dipublikasikan. | LHS-R03, LHS-R04 |
 
 # Relasi Use case
-| ID | Use Case Sumber | Jenis Relasi | Use Case Tujuan | Keterangan |
-|---|---|---|---|---|
-| SIA-REL01 | Civitas Akademika | Association | Lihat Kalender Akademik | Civitas Akademika dapat melihat kalender akademik. |
-| SIA-REL02 | Mahasiswa | Generalization | Civitas Akademika | Mahasiswa mewarisi peran umum Civitas Akademika. |
-| SIA-REL03 | Dosen | Generalization | Civitas Akademika | Dosen mewarisi peran umum Civitas Akademika. |
-| SIA-REL04 | Input Nilai Mata Kuliah | `<<include>>` | Validasi Mata Kuliah yang Diampu | Sistem memvalidasi mata kuliah yang diampu dosen. |
-| SIA-REL05 | Lihat KHS | `<<include>>` | Periksa Publikasi Nilai | Sistem memeriksa status publikasi nilai. |
-| SIA-REL06 | Tampilkan Peringatan Nilai Belum Dipublikasikan | `<<extend>>` | Lihat KHS | Peringatan ditampilkan apabila nilai belum dipublikasikan. |
-| SIA-REL07 | Tampilkan Pesan Kesalahan Input Nilai | `<<extend>>` | Input Nilai Mata Kuliah | Pesan kesalahan ditampilkan apabila nilai yang dimasukkan tidak valid. |
-
+| ID | Relasi | Use Case Sumber | Jenis Relasi | Use Case Tujuan | Keterangan |
+|---|---|---|---|---|---|
+| LHS-REL01 | Civitas Akademika → Lihat Kalender Akademik | Civitas Akademika | Association | Lihat Kalender Akademik (LHS-UC01) | Civitas Akademika dapat melihat kalender akademik. |
+| LHS-REL02 | Mahasiswa → Civitas Akademika | Mahasiswa | Generalization | Civitas Akademika | Mahasiswa mewarisi peran dan akses umum dari Civitas Akademika. |
+| LHS-REL03 | Dosen → Civitas Akademika | Dosen | Generalization | Civitas Akademika | Dosen mewarisi peran dan akses umum dari Civitas Akademika. |
+| LHS-REL04 | Dosen → Input Nilai Mata Kuliah | Dosen | Association | Input Nilai Mata Kuliah (LHS-UC02) | Dosen menginput nilai mata kuliah yang diampunya. |
+| LHS-REL05 | Input Nilai Mata Kuliah → Validasi Mata Kuliah yang Diampu | Input Nilai Mata Kuliah (LHS-UC02) | `<<include>>` | Validasi Mata Kuliah yang Diampu (LHS-UC08) | Penginputan nilai mencakup pemeriksaan bahwa mata kuliah diampu oleh dosen yang bersangkutan. |
+| LHS-REL06 | Input Nilai Mata Kuliah → Simpan Nilai Mata Kuliah | Input Nilai Mata Kuliah (LHS-UC02) | `<<include>>` | Simpan Nilai Mata Kuliah (LHS-UC09) | Nilai yang diinput harus disimpan ke dalam sistem. |
+| LHS-REL07 | Mahasiswa → Lihat KHS | Mahasiswa | Association | Lihat KHS (LHS-UC03) | Mahasiswa dapat melihat KHS miliknya. |
+| LHS-REL08 | Lihat KHS → Periksa Publikasi Nilai | Lihat KHS (LHS-UC03) | `<<include>>` | Periksa Publikasi Nilai (LHS-UC10) | Sistem memeriksa status publikasi nilai sebelum menampilkan KHS. |
+| LHS-REL09 | Lihat KHS → Tampilkan KHS | Lihat KHS (LHS-UC03) | `<<include>>` | Tampilkan KHS (LHS-UC11) | Sistem menampilkan KHS berdasarkan nilai yang telah dipublikasikan. |
+| LHS-REL10 | Admin Akademik → Kelola Data Mahasiswa | Admin Akademik | Association | Kelola Data Mahasiswa (LHS-UC04) | Admin Akademik memiliki kewenangan mengelola data mahasiswa. |
+| LHS-REL11 | Tambah Data Mahasiswa → Kelola Data Mahasiswa | Tambah Data Mahasiswa (LHS-UC05) | Generalization | Kelola Data Mahasiswa (LHS-UC04) | Tambah data merupakan bentuk khusus dari pengelolaan data mahasiswa. |
+| LHS-REL12 | Ubah Data Mahasiswa → Kelola Data Mahasiswa | Ubah Data Mahasiswa (LHS-UC06) | Generalization | Kelola Data Mahasiswa (LHS-UC04) | Ubah data merupakan bentuk khusus dari pengelolaan data mahasiswa. |
+| LHS-REL13 | Hapus Data Mahasiswa → Kelola Data Mahasiswa | Hapus Data Mahasiswa (LHS-UC07) | Generalization | Kelola Data Mahasiswa (LHS-UC04) | Hapus data merupakan bentuk khusus dari pengelolaan data mahasiswa. |
 
