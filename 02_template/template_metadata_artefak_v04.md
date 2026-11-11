@@ -5,7 +5,7 @@ Pertemuan         : 4
 Sumber skenario   : Modul
 Jenis/status      : latihan / draf / telah direview 
 Kakas             : draw.io
-Pembuat           : 2406073 Mochamad Zidaen Bahtiar
+Pembuat           : 2406073 Mochamad Zidane Bahtiar
 Versi dan tanggal : V04 20-10-2026
 Asumsi/pertanyaan : -
 Pemeriksaan       : -

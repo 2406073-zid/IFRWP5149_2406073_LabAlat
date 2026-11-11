@@ -7,5 +7,5 @@ Kakas               : draw.io
 Pembuat             : Mochamad Zidane Bahtiar 2406073
 Versi dan tanggal   : v02 / 7 Oktober 2026
 Asumsi              : Hak akses sesuai; autentikasi di luar latihan
-Pemeriksaan         : [hasil review]
-Riwayat revisi      : [perubahan yang benar-benar dilakukan]
+Pemeriksaan         : -
+Riwayat revisi      : -
